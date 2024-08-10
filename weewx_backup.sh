@@ -6,7 +6,7 @@
 #####################################################################
 
 # Stop weewx daemon
-sudo /etc/init.d/weewx stop
+sudo systemctl stop weewx
 
 # What to backup
 backup_files1="/var/lib/weewx/weewx.sdb"
@@ -49,4 +49,4 @@ echo "Backup of moved to $dest"
 echo
 
 # Restart weewx
-sudo /etc/init.d/weewx start
+sudo systemctl start weewx
